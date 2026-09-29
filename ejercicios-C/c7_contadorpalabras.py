@@ -1,4 +1,4 @@
-frase = "le quieren venir a hablar de kiosco al maxi"
+frase = "el gato ve al gato y el gato ve al perro"
 
 palabras = frase.split()
 
