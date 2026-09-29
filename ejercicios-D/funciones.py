@@ -16,6 +16,11 @@ def estadisticas(notas):
     }
 
 
+def reporte(notas):
+    stats = estadisticas(notas)
+    return f"Promedio: {stats['promedio']:.1f} | Máximo: {stats['maximo']} | Mínimo: {stats['minimo']}"
+
+
 if __name__ == "__main__":
     print(promedio([7, 4, 9, 10, 6]))
     print(promedio([10, 8, 9]))
@@ -25,4 +30,5 @@ if __name__ == "__main__":
     print(aprobo([5, 6, 7]))
     print(aprobo([5, 6, 7], minimo=7))
     print(estadisticas([7, 4, 9, 10, 6]))
+    print(reporte([7, 4, 9, 10, 6]))
     
